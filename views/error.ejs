@@ -1,11 +1,16 @@
+<!--header-->
 <%- include partials/header.ejs %>
 
+<!--nav-->
 <%- include partials/main_nav.ejs %>
 
+<!--content of error-->
 <h1><%= message %></h1>
 <h2><%= error.status %></h2>
 <pre><%= error.stack %></pre>
 
+<!--foot nav-->
 <%- include partials/bottom_nav.ejs %>
 
+<!--foot-->
 <%- include partials/footer.ejs %>
