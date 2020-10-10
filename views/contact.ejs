@@ -1,0 +1,30 @@
+<%- include partials/header.ejs %>
+
+<%- include partials/main_nav.ejs %>
+
+
+<main>
+    <div class="jumbotron">
+      <h1 class="display-6">Welcome to the <%= title %></h1>
+      <p class="lead">
+
+      Here is my contact information:
+
+
+       <form>
+                <p>
+                    E-mail:<br /><input type="text" name="email" id="email"> <br><br>
+                    Name:<br /> <input type="text" name="email" id="name">
+                    <br><br>
+                    <textarea rows="5" cols="30" name="comment" form="text"></textarea><br>
+                    <input type="submit" value="Send"> <input type="Reset" value="Clear">
+                </p>
+            </form>
+        </p>
+    </div>
+    
+  </main> 
+
+<%- include partials/bottom_nav.ejs %>
+
+<%- include partials/footer.ejs %>
