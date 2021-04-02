@@ -6,20 +6,6 @@ let mongoose = require('mongoose');
 let book = require('../models/book');
 
 
-module.exports.displayContacts = (req, res, next)=>
-{
-    book.find((err,bookList)=>
-    {
-        if(err)
-        {
-            return console.error(err);
-        }
-        else
-        {
-            res.render('list/business_list', {title: 'Business List', bookList: bookList});
-        } 
-    });
-}
 
 module.exports.displayAddPage = (req,res,next)=>
 {

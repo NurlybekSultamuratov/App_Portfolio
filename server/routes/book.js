@@ -12,8 +12,7 @@ let book = require('../models/book');
 let ContactController = require('../controllers/book');
 
 
-//CONNECT TO MODEL
-router.get('/',ContactController.displayContacts);
+
 
 /*GET ROUTE FOR DISPLAYING THE ADD PAGE - CREATE OPERATION */
 router.get('/add',ContactController.displayAddPage);
